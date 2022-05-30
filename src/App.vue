@@ -1,22 +1,17 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
   <div class="wrapper">
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      | 
-      <RouterLink to="/about">About</RouterLink>
-      | 
-      <RouterLink to="/first">First Component</RouterLink>
-    </nav>
+    <b-nav tabs fill justified>
+      <b-nav-item><RouterLink to="/">Home</RouterLink></b-nav-item>
+      <b-nav-item><RouterLink to="/first">First Component</RouterLink></b-nav-item>
+      <b-nav-item><RouterLink to="/about">About</RouterLink></b-nav-item>
+    </b-nav>
   </div>
 
   <RouterView />
 </template>
 
-<style>
-
-</style>
+<style></style>
